@@ -2,8 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Кирилл Леонов — Engineering Manager / Head of Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Кирилл Леонов — Engineering Manager</title>
     <style>
         * {
             margin: 0;
@@ -13,54 +13,179 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: #f5f7fb;
-            color: #1e293b;
+            background-color: #f0f4f8;
+            color: #1a2a3a;
             line-height: 1.5;
             padding: 2rem 1rem;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
-            background: white;
-            border-radius: 28px;
-            box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.1);
             overflow: hidden;
         }
 
-        /* Темная шапка */
         .header {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            padding: 2.5rem 2rem;
-            border-bottom: 1px solid #334155;
+            background: linear-gradient(135deg, #0a2b3e 0%, #1a4a6e 100%);
+            color: white;
+            padding: 2.5rem 2.5rem 1.8rem 2.5rem;
         }
 
-        .name {
+        .header h1 {
             font-size: 2.8rem;
             font-weight: 700;
-            letter-spacing: -0.02em;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+            margin-bottom: 0.3rem;
+            letter-spacing: -0.5px;
         }
 
-        .title {
-            font-size: 1.2rem;
-            color: #60a5fa;
-            margin-bottom: 0.75rem;
+        .header .title {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
             font-weight: 500;
         }
 
-        .badge {
-            display: inline-block;
-            background: #334155;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            color: #cbd5e1;
+        .header .tagline {
+            font-size: 1rem;
+            opacity: 0.75;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 0.8rem;
             margin-top: 0.5rem;
+        }
+
+        .content {
+            padding: 2rem 2.5rem;
+        }
+
+        .highlight-box {
+            background: #f0f9ff;
+            border-left: 4px solid #1e6f5c;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            font-style: normal;
+            color: #1a4a6e;
+        }
+
+        .principle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.2rem;
+            margin: 1.5rem 0;
+        }
+
+        .principle-card {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 1.2rem;
+            border-top: 3px solid #1e6f5c;
+        }
+
+        .principle-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.6rem;
+            color: #0a2b3e;
+        }
+
+        .principle-card p {
+            font-size: 0.88rem;
+            color: #2c3e44;
+            line-height: 1.4;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin: 1.8rem 0 1rem 0;
+            padding-bottom: 0.4rem;
+            border-bottom: 3px solid #e2e8f0;
+            color: #0f3b5c;
+        }
+
+        .result-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .result-title {
+            font-weight: 700;
+            color: #0a2b3e;
+            margin-bottom: 0.3rem;
+        }
+
+        .job {
+            margin-bottom: 2rem;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.3rem;
+        }
+
+        .job-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0a2540;
+        }
+
+        .job-company {
+            font-weight: 600;
+            color: #1e6f5c;
+        }
+
+        .job-date {
+            font-size: 0.85rem;
+            color: #6c7f8f;
+        }
+
+        .job-location {
+            font-size: 0.8rem;
+            color: #8a9aaa;
+            margin-bottom: 0.8rem;
+        }
+
+        ul {
+            margin: 0.5rem 0 0.8rem 1.2rem;
+        }
+
+        li {
+            margin: 0.35rem 0;
+            font-size: 0.92rem;
+        }
+
+        .inspire-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin: 1rem 0 0.5rem 0;
+        }
+
+        .inspire-item {
+            background: #f1f5f9;
+            padding: 0.4rem 1rem;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            color: #1e4a76;
+        }
+
+        .footer {
+            background: #f8fafc;
+            padding: 1.2rem 2.5rem;
+            font-size: 0.8rem;
+            color: #5a6e7c;
+            text-align: center;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .footer a {
+            color: #1e6f5c;
+            text-decoration: none;
         }
 
         .contacts {
@@ -82,400 +207,207 @@
             color: white;
         }
 
-        /* Светлый контент */
-        .content {
-            padding: 2rem;
-        }
-
-        .section {
-            margin-bottom: 2rem;
-        }
-
-        .section-title {
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: #0f172a;
-            border-left: 4px solid #2563eb;
-            padding-left: 1rem;
-            margin-bottom: 1.25rem;
-        }
-
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.25rem;
-            margin-top: 0.5rem;
-        }
-
-        .card {
-            background: #f8fafc;
-            border-radius: 16px;
-            padding: 1.25rem;
-            border: 1px solid #e2e8f0;
-            transition: all 0.2s;
-        }
-
-        .card:hover {
-            border-color: #2563eb;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
-
-        .card h3 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: #2563eb;
-            margin-bottom: 0.75rem;
-        }
-
-        .card p, .card li {
-            font-size: 0.85rem;
-            color: #334155;
-            line-height: 1.5;
-        }
-
-        .card ul {
-            padding-left: 1.2rem;
-            margin-top: 0.5rem;
-        }
-
-        .card li {
-            margin-bottom: 0.4rem;
-        }
-
-        .job {
-            margin-bottom: 2rem;
-            border-left: 2px solid #e2e8f0;
-            padding-left: 1.25rem;
-        }
-
-        .job-header {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 0.5rem;
-        }
-
-        .job-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: #0f172a;
-        }
-
-        .job-period {
-            font-size: 0.8rem;
-            color: #64748b;
-        }
-
-        .job-company {
-            font-weight: 500;
-            color: #2563eb;
-            margin-bottom: 0.75rem;
-            font-size: 0.9rem;
-        }
-
-        .achievements {
-            padding-left: 1.2rem;
-            margin-top: 0.5rem;
-        }
-
-        .achievements li {
-            margin-bottom: 0.5rem;
-            font-size: 0.85rem;
-            color: #334155;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 0.5rem;
-        }
-
-        .skill-tag {
-            background: #e2e8f0;
-            padding: 0.25rem 0.75rem;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 500;
-            color: #1e293b;
-            transition: all 0.2s;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .skill-tag:hover {
-            background: #2563eb;
-            color: white;
-        }
-
-        .skill-tag a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        hr {
-            margin: 1.5rem 0;
-            border: none;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        .pdf-button {
-            display: inline-block;
-            background: #0f172a;
-            color: white;
-            text-decoration: none;
-            padding: 0.75rem 1.5rem;
-            border-radius: 40px;
-            font-weight: 500;
-            font-size: 0.85rem;
-            transition: all 0.2s;
-            margin-top: 1rem;
-            border: none;
-            cursor: pointer;
-        }
-
-        .pdf-button:hover {
-            background: #2563eb;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1.5rem 2rem;
-            background: #f8fafc;
-            font-size: 0.75rem;
-            color: #64748b;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        @media (max-width: 640px) {
-            .name {
-                font-size: 1.8rem;
-            }
+        @media (max-width: 700px) {
             .header {
                 padding: 1.5rem;
             }
+            .header h1 {
+                font-size: 2rem;
+            }
             .content {
-                padding: 1.25rem;
+                padding: 1.5rem;
             }
-            .job-header {
-                flex-direction: column;
-            }
-            .contacts {
-                gap: 0.75rem;
+            .principle-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Темная шапка -->
-        <div class="header">
-            <div class="name">Кирилл Леонов</div>
-            <div class="title">Engineering Manager / Head of Development</div>
-            <div class="badge">от железа до интерфейса · 25 лет в разработке</div>
+<div class="container">
+    <div class="header">
+        <h1>Кирилл Леонов</h1>
+        <div class="title">Engineering Manager · Head of Development</div>
+        <div class="tagline">25 лет в IT · 7 лет в управлении</div>
             <div class="contacts">
                 <span>📍 Москва / Санкт-Петербург</span>
                 <span>📞 +7 916 928-32-01</span>
                 <span>✉️ leonovka@ya.ru</span>
-                <span><a href="https://www.linkedin.com/in/кирилл-леонов-59a49853/">🔗 LinkedIn</a></span>
+            </div>
+    </div>
+
+    <div class="content">
+        <div class="highlight-box">
+            <p><strong>25 лет в IT, 7 лет в управлении.</strong> Проектирую и строю системы разработки «с нуля» — от первых решений до команды и промышленной эксплуатации. Говорю на языке разработчиков и бизнеса одновременно. Вижу, где команда завышает сроки, а где реальная сложность. Внедряю практики на опережение — автотесты, контроль качества, метрики. Работаю в компаниях годами (5–7 лет), потому что выстраиваю долгосрочные системы. <strong>Выхожу за пределы метрик — изучаю, как продукт работает в реальной среде. Нахожу системные проблемы, которые не видны в Jira: разрывы в процессах, скрытые блокеры, неэффективные сценарии использования.</strong></p>
+        </div>
+
+        <h2>Мой подход к управлению</h2>
+        <div class="principle-grid">
+            <div class="principle-card">
+                <h3>🔍 Глубокое понимание разработки</h3>
+                <p>Могу оценить сложность задачи, не погружаясь в код. Разработчики доверяют — я не лезу в их код, я помогаю им видеть картину целиком.</p>
+            </div>
+            <div class="principle-card">
+                <h3>⚡ На опережение</h3>
+                <p>Внедряю автотесты, метрики, контроль качества за 3–6 месяцев до того, как команда почувствует боль. Создаю системы, где кризисы не возникают.</p>
+            </div>
+            <div class="principle-card">
+                <h3>🎯 Продукт, а не «человеко-часы»</h3>
+                <p>Строю процесс исходя из мощности команды и реальных требований продукта, а не подгоняю людей под искусственный бюджет.</p>
+            </div>
+            <div class="principle-card">
+                <h3>👟 Выхожу за пределы метрик</h3>
+                <p>Изучаю продукт в реальной среде, а не по тикетам. Нахожу системные проблемы: разрывы в процессах, скрытые блокеры, неэффективные сценарии. Устраняю причину, а не следствие.</p>
+            </div>
+            <div class="principle-card">
+                <h3>🤝 Двуязычие</h3>
+                <p>Перевожу бизнес-требования на язык разработки — и наоборот. Разработчики мне доверяют, бизнес понимает.</p>
+            </div>
+            <div class="principle-card">
+                <h3>🌱 Рост через сочетание</h3>
+                <p>Комбинирую разработчиков в парах на сложных задачах, чтобы они учились друг у друга. Знаю, кому нужна поддержка, а кому — свобода.</p>
             </div>
         </div>
 
-        <!-- Светлый контент -->
-        <div class="content">
-            <!-- Профессиональный профиль -->
-            <div class="section">
-                <div class="section-title">Профессиональный профиль</div>
-                <p style="margin-bottom: 0.75rem;"><strong>Engineering Manager / Head of Development</strong> с 25-летним опытом в IT. Создаю сложные системы «с нуля» — от идеи до промышленной эксплуатации. Проектирую архитектуру, выстраиваю процессы, формирую команды, довожу продукт до пользователя. При необходимости погружаюсь в код или выезжаю «в поле», чтобы понять реальные проблемы.</p>
-                <p style="margin-bottom: 0.75rem;">Прошёл путь от embedded-прошивок для атомного ледокола до кросс-платформенной мобильной разработки. Запускал собственные стартапы (Мединс, Медиапланш) и проекты по заказу (электронные очереди для банков, навигационные приложения для MesseFrankfurt, мультимедийные экспонаты для Политехнического музея). В каждом проекте — от идеи до релиза и поддержки.</p>
-                <p style="margin-bottom: 0.75rem;">Целенаправленно занимаюсь управлением разработкой последние 7 лет (включая руководство в своей компании и найм в Спортмастер Лаб). Руководил кросс-платформенной командой 8+ человек, отвечал за архитектурную стратегию, качество, delivery, развитие людей.</p>
-                <p style="margin-bottom: 0.75rem;">Мой подход — <strong>технический менеджмент</strong>: глубокое понимание технологий, но фокус на управлении, стратегии и росте команды. Код — инструмент для автоматизации и анализа, а не основная работа.</p>
-                <p style="margin-bottom: 0.75rem;"><strong>Принципы:</strong> ответственность за результат, системное мышление, эмпатия к пользователям и разработчикам.</p>
+        <h2>Ключевые результаты</h2>
+        
+        <div class="result-item">
+            <div class="result-title">🏛️ Архитектурная стратегия</div>
+            <ul>
+                <li>Спроектировал и провёл внедрение многомодульной Clean-архитектуры для 3 ключевых приложений — вывод новых фич ускорился на 30%</li>
+                <li>Инициировал аудит техдолга, выявил 40% дублирования кода, организовал устранение за 6 месяцев без остановки разработки</li>
+                <li>Внедрил процесс ADR — каждое архитектурное решение документировано и обосновано</li>
+            </ul>
+        </div>
+
+        <div class="result-item">
+            <div class="result-title">📊 Процессы и предсказуемость</div>
+            <ul>
+                <li>Построил систему на Kanban с анализом метрик (Lead Time, незавершёнка) — сократил Lead Time на 25% за квартал</li>
+                <li>Перестроил Git-flow — время интеграции изменений с 2 дней до 4 часов</li>
+                <li>Внедрил анализ «дорогих задач» — выявил и переработал 15% задач, снизив их стоимость на 40%</li>
+                <li>Настроил процесс оценки задач, позволяющий выявлять завышение сроков на 30%</li>
+            </ul>
+        </div>
+
+        <div class="result-item">
+            <div class="result-title">⚙️ Качество на опережение</div>
+            <ul>
+                <li>Инициировал внедрение автотестов за 6 месяцев до того, как команда почувствовала потребность — предотвратил лавинообразный рост багов</li>
+                <li>Настроил SonarQube в блокирующем режиме (покрытие ≥60%) — критических багов в проде -30%</li>
+                <li>Организовал обучение QA-инженеров написанию автотестов — вырастил 4х специалистов из тестирования</li>
+            </ul>
+        </div>
+
+        <div class="result-item">
+            <div class="result-title">👥 Команда и люди</div>
+            <ul>
+                <li>Выстроил систему найма: 50+ собеседований, сократил время закрытия вакансий на 40%</li>
+                <li>Внедрил ИПР и карту компетенций — 80% целей выполнены</li>
+                <li>Вырастил 4 сотрудников: аналитик → iOS-разработчик, тестировщик → iOS-разработчик, два джуна → мидл</li>
+                <li>Провёл ротацию 4 разработчиков между проектами — снизил bus-фактор до нуля</li>
+                <li>Масштабировал команду с 5 до 15 человек, сохранив качество и культуру</li>
+            </ul>
+        </div>
+
+        <div class="result-item">
+            <div class="result-title">🔧 Инфраструктура и DevEx</div>
+            <ul>
+                <li>Организовал миграцию CI/CD с Bitbucket на GitLab — успешность сборок с 60% до 95%</li>
+                <li>Инициировал и контролировал решение 3-летней проблемы с бинарными фреймворками — разблокировал подрядчиков</li>
+                <li>Внедрил Tuist и монорепу — время сборки сократилось на 40%</li>
+            </ul>
+        </div>
+
+        <h2>Опыт работы</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Руководитель мобильной разработки / Engineering Manager</span>
+                <span class="job-date">2018–2025</span>
             </div>
+            <div class="job-company">Спортмастер Лаб</div>
+            <div class="job-location">Москва</div>
+            <ul>
+                <li>Управлял iOS/Android направлением, выстроил процессы с нуля</li>
+                <li>Масштабировал команду с 5 до 15 человек, внедрил систему развития и ротации</li>
+                <li>Построил архитектурную стратегию и контроль качества на опережение</li>
+                <li>Основал Клуб мобильной разработки</li>
+            </ul>
+        </div>
 
-            <!-- Ключевые компетенции -->
-            <div class="section">
-                <div class="section-title">Ключевые компетенции</div>
-                <div class="grid-2">
-
-                    <div class="card">
-                        <h3>👥 Управление командами</h3>
-                        <p>Найм (50+ собеседований), онбординг, менторинг, ИПР, карьерный рост, ротация, 1-1, удержание, улучшение климата в команде</p>
-                    </div>
-                    <div class="card">
-                        <h3>🏛️ Архитектурная стратегия</h3>
-                        <p>Clean Architecture, UDF, многомодульность, ADR, управление техдолгом, аудит архитектуры (цикломатическая сложность, зависимости)</p>
-                    </div>
-                    <div class="card">
-                        <h3>📊 Процессы & Метрики</h3>
-                        <p>Kanban, Agile, Flow-метрики (Lead Time, незавершенка), анализ дорогих задач, оптимизация Git-flow, внедрение процессов качества</p>
-                    </div>
-                    <div class="card">
-                        <h3>📱 Мобильная разработка (iOS & Android)</h3>
-                        <p>Архитектурное управление, анализ кода, внедрение концепций, менторинг команд.</p>
-                    </div>
-                    <div class="card">
-                        <h3>⚙️ Качество & Инфраструктура</h3>
-                        <p>Внедрение SonarQube (блокирующий режим), настройка CI/CD, миграция инфраструктуры, повышение стабильности сборок</p>
-                    </div>
-                    <div class="card">
-                        <h3>🎤 Мягкие навыки</h3>
-                        <p>Кросс-функциональная коммуникация, фасилитация, преподавание, публичные выступления, техническая документация</p>
-                    </div>
-                </div>
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Ведущий архитектор-разработчик / Team Lead</span>
+                <span class="job-date">2007–2015</span>
             </div>
+            <div class="job-company">ГАММА-ЦЕНТР</div>
+            <ul>
+                <li>Технический лидер направления банковского ПО и систем электронной очереди (Сбер, Альфа-Банк, Почта России)</li>
+                <li>С нуля создал технологическую платформу на C++/Qt, унифицировавшую 10+ продуктов</li>
+            </ul>
+        </div>
 
-            <!-- Публичная экспертиза -->
-            <div class="section">
-                <div class="section-title">Публичная экспертиза и менторство</div>
-                <div class="skills" style="margin-bottom: 1rem; flex-wrap: wrap; gap: 0.5rem;">
-                    <span class="skill-tag"><a href="https://www.youtube.com/watch?v=SWCp_K4ABJk" target="_blank">🎤 Спикер Mobius Spring 2024</a></span>
-                    <span class="skill-tag"><a href="https://prosv.ru/product/osnovi-komp-yuternoi-animatsii-10-11-klassi01/" target="_blank">📖 Автор учебника «Основы компьютерной анимации»</a></span>
-                    <span class="skill-tag">🎓 Автор курса «Middle iOS-Developer» (SwiftBook)</span>
-                    <span class="skill-tag"><a href="https://www.youtube.com/watch?v=xwCWuvH85ss&list=PLPFQBqER4HzMGXMiTaCOvPvkZ_NfB3AlF&index=1" target="_blank">🏆 Организатор Клуба мобильной разработки</a></span>
-                    <span class="skill-tag"><a href="https://habr.com/ru/specials/691448/" target="_blank">📝 Интервью на Habr (Спортмастер)</a></span>
-                </div>
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Начальник бюро / Инженер-разработчик</span>
+                <span class="job-date">2000–2006</span>
             </div>
+            <div class="job-company">СНИИП</div>
+            <ul>
+                <li>Управлял бюро приборов и IT, координировал работу 3–5 инженеров</li>
+                <li>Разрабатывал ПО и прошивки для дозиметрических систем (в т.ч. для атомного ледокола)</li>
+            </ul>
+        </div>
 
-            <!-- Опыт работы -->
-            <div class="section">
-                <div class="section-title">Опыт работы</div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <span class="job-title">Руководитель разработки (мобильные приложения) / Engineering Manager</span>
-                        <span class="job-period">2018–2025 (7 лет)</span>
-                    </div>
-                    <div class="job-company">Спортмастер Лаб</div>
-                    <p style="font-size: 0.85rem; color: #475569; margin-bottom: 0.75rem; font-style: italic;">
-                        Начинал с создания первой версии системы для ритейл-операций с нуля. 
-                        Участвовал в найме, взял на себя техническое лидерство. 
-                        Управлял iOS и Android-направлениями, внедрил автоматическое тестирование, обучив QA-инженеров программированию. 
-                        Последние годы полностью сосредоточился на управлении, процессах и архитектурной стратегии.
-                    </p>
-                    <ul class="achievements">
-                        <li><strong>Управление командой:</strong> Руководил кросс-платформенной командой 8+ человек (iOS/Android). Вырастил разработчиков из тестировщиков и аналитиков, провёл ротацию кадров для снижения bus-фактора;</li>
-                        <li><strong>Найм и развитие:</strong> Полностью перестроил процесс технического найма в мобильную разработку: ввёл скрининг, проработал вопросы и задачи вместе с командой, создал доброжелательную атмосферу на собеседованиях (помогал кандидатам раскрыться, снижал стресс). Провёл 50+ собеседований, закрыл ключевые вакансии. Внедрил карту компетенций и ИПР для каждого сотрудника;</li>
-                        <li><strong>Архитектурная стратегия:</strong> Инициировал и провёл аудит архитектуры (цикломатическая сложность, зависимости). Внедрил Clean-архитектуру и многомодульность, что ускорило вывод новых фич на 30% и снизило количество регрессий. Автор и куратор ADR;</li>
-                        <li><strong>Качество и процессы:</strong> Внедрил SonarQube в блокирующем режиме (покрытие ≥60%, нулевая терпимость к дефектам). Количество критических багов в продакшене снизилось на 30%. Организовал миграцию CI/CD с Bitbucket на GitLab, повысил успешность пайплайнов с 60% до 95%;</li>
-                        <li><strong>Метрики и эффективность:</strong> Внедрил анализ Kanban-метрик (Lead Time, незавершенка), выявил и устранил узкие места. Оптимизировал Git-flow, что сократило время интеграции изменений;</li>
-                        <li><strong>Культура:</strong> Основал Клуб мобильной разработки (межкомандные выступления, обмен опытом). Выступал спикером на Mobius Spring 2024.</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <span class="job-title">Ведущий инженер-программист / Архитектор ПО</span>
-                        <span class="job-period">2007–2015 (8 лет)</span>
-                    </div>
-                    <div class="job-company">ООО ЦНТ "ГАММА-ЦЕНТР"</div>
-                    <ul class="achievements">
-                        <li>Проектирование и разработка ПО для банковского и клиентского оборудования (диспенсеры, сейфы, депозитарные стойки);</li>
-                        <li>Создание прошивок для банковского оборудования (диспенсеры, сейфы, табло валют);</li>
-                        <li>Создание комплексных решений "Электронная очередь" для Альфа-Банка, Сбера, Почты России;</li>
-                        <li>Разработка UI для Электронных Очередей, Табло, клиентского ПО;</li>
-                        <li>Интеграция с периферией через низкоуровневые интерфейсы (RS-232/485);</li>
-                        <li>Сформировал единую технологическую платформу на C++/Qt, Lua, SQLite.</li>
-                    </ul>
-                </div>
-
-                <div class="job">
-                    <div class="job-header">
-                        <span class="job-title">Начальник отдела ВТ и приборов / Инженер-разработчик</span>
-                        <span class="job-period">2000–2006 (6 лет)</span>
-                    </div>
-                    <div class="job-company">СНИИП (Специализированный НИИ Приборостроения)</div>
-                    <ul class="achievements">
-                        <li>Разработка ПО и прошивок для дозиметрических систем. Одно из приложений установлено на атомном ледоколе;</li>
-                        <li>Руководство разработкой АСРК для объектов атомной отрасли и АЭС;</li>
-                        <li>Управление отделом, IT-инфраструктурой, метрологическим обслуживанием.</li>
-                    </ul>
-                </div>
-
-                 <div class="job">
-                    <div class="job-header">
-                        <span class="job-title">Ведущий архитектор-разработчик / Технический предприниматель</span>
-                        <span class="job-period">Параллельная деятельность</span>
-                    </div>
-                    <div class="job-company">Фриланс, собственные проекты и стартапы</div>
-                    <ul class="achievements">
-                        <li><strong>Мединс (сооснователь):</strong> <a href="https://medins.ru/">Система автоматизации вызова скорой медицинской помощи.</a> Полный цикл: Back (Python, MQTT). Android-приложение (Java) для автоматизации вызова скорой медицинской помощи, интеграция с GPS, API, бэкендом. Клиентское ПО (Borland C++);</li>
-                        <li><strong>Медиапланш (сооснователь):</strong> <a href="https://www.business-gazeta.ru/article/104342">Мультимедийные устройства для замены бортовых журналов (Ак Барс Аэро).</a> Полный цикл: подбор железа, сбор метрик, архитектура, разработка, интеграция с железом, контент-менеджмент;</li>
-                        <li><strong>MesseFrankfurt:</strong> <a href="https://apps.apple.com/ru/developer/messe-frankfurt-gmbh/id365706928">iOS (Swift)</a> и <a href="https://play.google.com/store/apps/developer?id=Messe+Frankfurt+GmbH&hl=ru">Android-версии навигационных приложений (Java)</a>, ежегодные релизы в Google Play;</li>
-                        <li><strong>Политехнический музей:</strong> Интерактивные экспонаты «Масштабы Вселенной», «Зеркало Времени» на <a href="https://habr.com/ru/articles/393805/">выставке «Алиса в Стране Наук»</a>, модернизация <a href="https://www.fursr.com/projects/facebox">Facebox</a>;</li>
-                        <li><strong>Прототипирование:</strong> <a href="https://vk.com/coincom">Терминал для приема монет Concom.</a> Разработка терминала, прошивки, UI, интеграция с монетоприемником, платежными системами.</li>
-                    </ul>
-                </div>
-
-
+        <h2>Предпринимательские проекты (основатель / руководитель)</h2>
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Сооснователь и технический директор</span>
+                <span class="job-date">2008–2016</span>
             </div>
+            <ul>
+                <li><strong>Мединс</strong> — система вызова скорой помощи. Полный цикл: идея, найм, архитектура, клиенты. <a href="https://medins.ru" target="_blank">medins.ru</a></li>
+                <li><strong>Медиапланш</strong> — мультимедийные планшеты для авиации (Ак Барс Аэро). <a href="https://www.business-gazeta.ru/article/104342" target="_blank">статья</a></li>
+                <li><strong>MesseFrankfurt</strong> — iOS/Android навигационные приложения для выставок</li>
+                <li><strong>Политехнический музей</strong> — интерактивные экспонаты (<a href="https://www.flickr.com/photos/polytechnicum/sets/72157654046650271/" target="_blank">фото</a>)</li>
+            </ul>
+        </div>
 
-            <!-- Образование -->
-            <div class="section">
-                <div class="section-title">Образование и сертификации</div>
-                <div class="grid-2">
-                    <div class="card">
-                        <h3>🎓 Высшее</h3>
-                        <p>Московский Технический Университет Связи и Информатики, Многоканальные телекоммуникационные системы (1995–2000)</p>
-                    </div>
-                    <div class="card">
-                        <h3>📚 Технические курсы</h3>
-                        <p>C/C++, Qt (Центр «Специалист» при МГТУ им. Баумана)<br>Android, Swift, Java (Школа программирования, SwiftBook)</p>
-                    </div>
-                    <div class="card">
-                        <h3>🎯 Управленческие курсы</h3>
-                        <p>Agile, Kanban, Flow-метрики, фасилитация, управление конфликтами, эмоциональный интеллект</p>
-                    </div>
-                </div>
-            </div>
+        <h2>Публичная экспертиза и менторство</h2>
+        <ul>
+            <li><strong>Автор учебника</strong> для 10-11 классов «Основы компьютерной анимации» — <a href="https://www.labirint.ru/books/688187/" target="_blank">Labirint</a></li>
+            <li><strong>Автор курса</strong> «Middle iOS-Developer» для SwiftBook</li>
+            <li><strong>Спикер</strong> Mobius Spring 2024 (доклад по ZPL, высокие оценки)</li>
+            <li><strong>Ментор</strong> — вырастил нескольких iOS-разработчиков из тестировщиков и аналитиков</li>
+            <li><strong>Технический писатель</strong> — веду дневник, создаю документацию</li>
+        </ul>
 
-            <!-- Что вдохновляет и увлечения -->
-            <div class="section">
-                <div class="section-title">Что вдохновляет</div>
-                <div class="skills" style="margin-bottom: 1rem; flex-wrap: wrap;">
-                    <span class="skill-tag">🎯 Стратегические дискуссии о будущем продукта</span>
-                    <span class="skill-tag">🌱 Рост и развитие команды</span>
-                    <span class="skill-tag">🏗️ Архитектурная реанимация legacy</span>
-                    <span class="skill-tag">🤝 Работа в связке с сильными инженерными командами</span>
-                    <span class="skill-tag">📖 Создание понятной и живой документации</span>
-                </div>
+        <h2>Образование</h2>
+        <ul>
+            <li><strong>МТУСИ</strong> — Многоканальные телекоммуникационные системы</li>
+            <li><strong>Технические курсы:</strong> C/C++, Qt (Центр «Специалист»), Android, Swift (SwiftBook)</li>
+            <li><strong>Управленческие курсы:</strong> Agile, Kanban (Flow Metrics), фасилитация, управление конфликтами, эмоциональный интеллект</li>
+        </ul>
 
-                <div class="section-title" style="margin-top: 1.5rem;">Увлечения</div>
-                <div class="skills" style="flex-wrap: wrap;">
-                    <span class="skill-tag">📷 Фото- и видеосъемка</span>
-                    <span class="skill-tag">✍️ Рисование</span>
-                    <span class="skill-tag">📓 Ведение дневника</span>
-                    <span class="skill-tag">🚲 Велосипед</span>
-                    <span class="skill-tag">🛹 Лонгборд</span>
-                    <span class="skill-tag">✈️ Путешествия</span>
-                </div>
-                <p style="font-size: 0.8rem; color: #64748b; margin-top: 0.75rem;">🎬 <a href="https://www.youtube.com/@user-leonovka" style="color: #2563eb;" target="_blank">youtube</a></p>
-            </div>
+        <h2>Что вдохновляет</h2>
+        <div class="inspire-grid">
+            <span class="inspire-item">🎯 Строить системы с нуля</span>
+            <span class="inspire-item">🌱 Растить команду</span>
+            <span class="inspire-item">🏗️ Реанимировать legacy</span>
+            <span class="inspire-item">🤝 Быть мостом между бизнесом и разработкой</span>
+            <span class="inspire-item">📖 Создавать живую документацию</span>
+        </div>
+    </div>
 
-            <hr>
-
-            <div style="text-align: center;">
-                <button class="pdf-button" id="downloadPdf">📄 Скачать резюме в PDF</button>
-                <p style="font-size: 0.7rem; color: #94a3b8; margin-top: 0.75rem;">
+    <div class="footer">
+                 <p style="font-size: 0.7rem; color: #94a3b8; margin-top: 0.75rem;">
                     🔗 <a href="https://github.com/leonovka" target="_blank">GitHub</a> · 
                     🔗 <a href="https://www.linkedin.com/in/кирилл-леонов-59a49853/" target="_blank">LinkedIn</a>
                     <br>
                     <img src="https://visitor-badge.laobi.icu/badge?page_id=leonovka.cv" alt="visitors" style="margin-top: 5px;">
                 </p>
-            </div>
-        </div>
-
-        <footer>
-            Кирилл Леонов — Engineering Manager / Head of Development. 25 лет в разработке: от атомных ледоколов до управления мобильными командами.
-        </footer>
     </div>
-
-    <script>
-        document.getElementById('downloadPdf').addEventListener('click', function(e) {
-            e.preventDefault();
-            window.print();
-        });
-    </script>
+</div>
 </body>
 </html>
